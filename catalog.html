@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Nerds - Каталог</title>
+  <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&#38;subset=latin,cyrillic-ext'>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+  <header class="main-header">
+    <div class="container">
+      <section class="menu clearfix">
+        <a class="logo" href="index.html">
+          <img src="img/logo.png" width="139" height="56" alt="Nerds">
+        </a>
+        <nav class="main-navigation">
+          <ul>
+            <li>
+              <a href="index.html">Студия</a>
+            </li>
+            <li>
+              <a href="#">Клиенты</a>
+            </li>
+            <li class="active">
+              <a href="#">Магазин</a>
+            </li>
+            <li>
+              <a href="#">Контакты</a>
+            </li>
+            <li>
+              <a class="basket" href="#"><i class="icon-basket"></i>Корзина</a>	
+            </li>
+          </ul>
+        </nav>
+      </section>
+      <div class="header-title">
+        Добро пожаловать в магазин готовых макетов
+      </div>
+    </div>
+  </header>
+
+  <div class="container">
+    <div class="filter">
+      <form action="#" method="post">
+        <fieldset class="filter-price">
+          <legend>Стоимость:</legend>
+          <div class="range">
+            <div id="keypress">
+              <!-- noUiSlider -->
+            </div>
+          </div>
+          <div class="range-fileds">
+            <label>
+              от <input type="text" name="min-price" id="input-with-keypress-0" value="0">
+            </label>
+            <label>
+              до <input type="text" name="max-price" id="input-with-keypress-1" value="15000">
+            </label>
+          </div>
+        </fieldset>
+        <fieldset class="filter-box">
+          <legend>Сетка:</legend>
+          <input type="radio" id="adaptive" name="radio" checked>
+          <label for="adaptive">Адаптивная</label>
+          <input type="radio" id="fixed" name="radio">
+          <label for="fixed">Фиксированная</label>
+          <input type="radio" id="rubber" name="radio">
+          <label for="rubber">Резиновая</label>
+        </fieldset>
+        <fieldset class="filter-box">
+          <legend>Особенности:</legend>
+          <input type="checkbox" id="slider" name="slider" checked>
+          <label for="slider">Слайдер</label>
+          <input type="checkbox" id="advantages" name="advantages">
+          <label for="advantages">Блок преимуществ</label>
+          <input type="checkbox" id="news" name="news" checked>
+          <label for="news">Новости</label>
+          <input type="checkbox" id="gallery" name="gallery">
+          <label for="gallery">Галерея</label>
+          <input type="checkbox" id="basket" name="basket">
+          <label for="basket">Корзина</label>
+        </fieldset>
+        <input class="btn btn-gray" type="submit" value="Показать">
+      </form>
+    </div>
+    <div class="catalog">
+      <div class="catalog-sorting">
+        <span>Сортировать:</span>
+        <a href="#">По цене</a>
+        <a href="#">По типу</a>
+        <a href="#">По функционалу</a>
+        <div class="sort-updown">
+          <span class="arrow-down active"><i class="icon-down-dir"></i></span>
+          <span class="arrow-up"><i class="icon-up-dir"></i></span>
+        </div>
+      </div>
+      <div class="catalog-list">
+        <div class="catalog-item">
+          <span></span>
+          <img src="img/aviator.jpg" width="240" height="240" alt="aviator">
+          <div class="description">
+            <h3 class="description-title">Aviator</h3>
+            <div class="description-text">
+              Одностраничный макет с авторским дизайном
+            </div>
+            <a class="btn btn-red" href="#">8000 р.</a>
+          </div>
+        </div>
+        <div class="catalog-item">
+          <span></span>
+          <img src="img/sunset.jpg" width="240" height="240" alt="sunset">
+          <div class="description">
+            <h3 class="description-title">Sunset</h3>
+            <div class="description-text">
+              Интернет-магазин с личным кабинетом
+            </div>
+            <a class="btn btn-red" href="#">10000 р.</a>
+          </div>
+        </div>
+        <div class="catalog-item">
+          <span></span>
+          <img src="img/forte.jpg" width="240" height="240" alt="forte">
+          <div class="description">
+            <h3 class="description-title">Forte</h3>
+            <div class="description-text">
+              Отличный макет для личного блога
+            </div>
+            <a class="btn btn-red" href="#">5000 р.</a>
+          </div>
+        </div>
+        <div class="catalog-item">
+          <span></span>
+          <img src="img/marquee.jpg" width="240" height="240" alt="marquee">
+          <div class="description">
+            <h3 class="description-title">Marquee</h3>
+            <div class="description-text">
+              Сайт для ресторана быстрого питания
+            </div>
+            <a class="btn btn-red" href="#">12000 р.</a>
+          </div>
+        </div>
+        <div class="catalog-item">
+          <span></span>
+          <img src="img/avenue.jpg" width="240" height="240" alt="avenue">
+          <div class="description">
+            <h3 class="description-title">Avenue</h3>
+            <div class="description-text">
+              Макет для блога  о путешествиях
+            </div>
+            <a class="btn btn-red" href="#">8000 р.</a>
+          </div>
+        </div>
+        <div class="catalog-item">
+          <span></span>
+          <img src="img/dovetail.jpg" width="240" height="240" alt="dovetail">
+          <div class="description">
+            <h3 class="description-title">Dovetail</h3>
+            <div class="description-text">
+              Интернет-магазин с галереей товаров
+            </div>
+            <a class="btn btn-red" href="#">14000 р.</a>
+          </div>
+        </div>
+      </div>
+      <div class="paginator">
+        <a class="disabled" href="#">1</a>
+        <a href="#">2</a>
+        <a href="#">3</a>
+        <a class="next" href="#">Следующая</a>
+      </div>
+    </div>
+  </div>
+
+  <section class="map">
+    <div class="map-image" id="map-canvas"></div>
+    <div class="container">
+      <div class="contacts">
+        <h2 class="contacts-title">NЁRDS DESIGN STUDIO</h2>
+        <p>191186, Санкт-Петербург,<br>
+        ул. Б. Конюшенная, д. 19/8</p>
+        <p>тел. +7 (812) 275-75-75</p>
+        <a class="btn btn-red" href="#">Напишите нам</a>
+      </div>
+      <section class="feedback-form">
+        <div class="feedback-form-close"></div>
+        <form action="#" method="post">
+          <div class="name-input">
+            <label for="name">Ваше имя:</label>
+            <input type="text" id="name" name="name" value="" placeholder="представьтесь, пожалуйста">
+          </div>
+          <div class="email-input">
+            <label for="email">Ваш e-mail:</label>
+            <input type="email" id="email" name="email" value="" placeholder="для отравки ответа">
+          </div>
+          <label for="text">Текст письма:</label>
+          <textarea name="text" id="text" placeholder="в свободной форме"></textarea>
+          <button class="btn btn-red" type="submit">Отправить</button>
+          <button class="btn btn-gray" type="submit">Отмена</button>
+        </form>
+      </section>
+    </div>
+  </section>
+
+  <footer class="main-footer">
+    <div class="container">
+      <div class="footer-social">
+        <a class="social-btn" href="#"><i class="icon-vk"></i></a>
+        <a class="social-btn" href="#"><i class="icon-facebook"></i></a>
+        <a class="social-btn" href="#"><i class="icon-instagram"></i></a>
+      </div>
+      <div class="footer-text">
+        <p>Давайте дуржить, это выгодно</p>
+        <span>Скидка 10% для друзей из социальных сетей.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAR5CyWfGUz7ERy06dRhXC1Dg4YiPshtlc"></script>
+  <!--<script src="https://maps.googleapis.com/maps/api/js?v=3.exp?sensor=false"></script>-->
+  <script src="js/nouislider.min.js"></script>
+  <script src="js/scripts.min.js"></script>
+</body>
+</html>
